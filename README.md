@@ -6,7 +6,7 @@ Basic ecommerce platform built on the Django Web Framework for Timewax assignmen
 
 **1.clone Repository & Install Packages**
 ```sh
-git clone 
+git clone https://github.com/ankit001mittal/Ecommerce_timewax.git
 ```
 **2.Setup Virtualenv**
 ```sh
