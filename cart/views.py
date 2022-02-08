@@ -26,6 +26,13 @@ def cart_remove(request, id):
     return redirect('cart:cart_detail')
 
 @csrf_exempt
+def clear(request):
+    cart = Cart(request.session)
+    product = Product.objects.all()
+    cart.clear()
+    return redirect('cart:cart_detail')
+
+@csrf_exempt
 def cart_detail(request):
     cart = Cart(request)
     for item in cart:
